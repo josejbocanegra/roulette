@@ -1,0 +1,50 @@
+h1{
+	color: blue;
+}
+.titulo {
+	color: blue;
+}
+.important{
+	font-weight: bold;
+	background-color: #FF8800;
+	font-variant: small-caps;
+}
+.error:hover{
+	background-color: #008800;
+}
+
+.error:active{
+	border:inset;
+	background-color: #0088FF;
+	background-color: #008800;
+}
+.button-link{
+	background-color: #9999FF;
+	border: outset;
+	border-color: black;
+	border-width: 5px;
+	color: black;
+	padding: 5px;
+}
+.button-link:hover{
+	background-color: #DDDDFF;
+}
+.button-link:active{
+	border:  inset;
+}
+
+
+.lista ul
+{
+   padding-right: 0px;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   margin: 0px;
+}
+.lista li  
+{
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+}
