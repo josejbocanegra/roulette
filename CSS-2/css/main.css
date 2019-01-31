@@ -1,0 +1,40 @@
+* {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.external-container {
+    background-color: red;
+    width: 300px;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    background-color: white;
+    margin: 10px;
+    padding: 2px;
+}
+
+.internal-container {
+    background-color: blue;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 1px;
+    padding: 0px;
+}
+
+.container {
+    width: 150pt;
+    font-size: 10pt;
+    /*display: inline-block;*/
+    text-align: justify;
+    margin-bottom: 5pt;
+}
+
+.important {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-image: linear-gradient(red, yellow);
+}
