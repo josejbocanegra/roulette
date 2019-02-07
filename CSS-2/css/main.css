@@ -1,11 +1,10 @@
-.container {
+/*.container {
     width: 150pt;
     font-size: 10pt;
     text-align: justify;
     border: 10px;
     border-style: solid;
     border-color: red;
-    position: fixed;
 }
 
 .important {
@@ -27,4 +26,31 @@
     border-style: double;
     border-color: green;
     background-color: yellow;
+}*/
+
+.container{
+    font-size: 10pt;
+    border: 20px;
+    border-style:solid;
+    border-color: red;
+    text-align: justify;
+    width: 150pt;
+}
+.important{
+    font-size: 10pt;
+    border-width:10px;
+    border-color: blue;
+    text-align: left;
+    width: 200pt;
+    padding-top: 10px;
+    background-color: grey;
+}
+.veryimportant{
+    font-size: 8pt;
+    border: double;
+    background-color: yellow;
+    border-width: 20px;
+    border-color: green;
+    text-align: right;
+    width: 400pt;
 }
