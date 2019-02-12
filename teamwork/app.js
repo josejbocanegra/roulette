@@ -12,14 +12,15 @@ teamWork.listProjects().then(response=>{
 }});
 */
 
-teamWork.getProjectTasks({projectId : '494242'}).then(tasks=>{
-    for (let tk in tasks){
-        var obj = tasks[tk][Object.keys(tasks[tk])[1]];
-        for(let ob in obj){
-            console.log(obj[ob].description);    
+teamWork.getProjectTasks({projectId : '494242'}).then(response=>{
+    for (let tasks in response){
+        var task = response[tasks]['todo-items'];
+        for(let tk in task){
+            console.log(task[tk]); 
+            console.log(task[tk].completed);  
+            console.log(task[tk].timeIsLogged);  
+            console.log(task[tk]['responsible-party-names']);
         }
-        
-        
 }});
 
 
