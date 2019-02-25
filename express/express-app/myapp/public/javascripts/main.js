@@ -21,7 +21,7 @@ function addMessage(e) {
     author: document.getElementById('username').value,
     text: document.getElementById('texto').value
   };
-  console.log("emitiendo");
+  console.log("emitting new message");
   socket.emit('new-message', message);
   return false;
 }

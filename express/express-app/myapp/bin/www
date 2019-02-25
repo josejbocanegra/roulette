@@ -20,25 +20,15 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-var iou = require("../io");
-iou.startConnection(server);
 
-/*
-var socket = require("socket.io");
-var io = socket(server); 
+/**
+ * Create socket connection.
+ */
+
+var io = require("../io");
+io.startConnection(server);
 
 
-io.on('connection', function(socket) {
-  console.log('Alguien se ha conectado con Sockets');
-  socket.emit('messages', messages);
-
-  socket.on('new-message', function(data) {
-    messages.push(data);
-
-    io.sockets.emit('messages', messages);
-  });
-});
-*/
 /**
  * Listen on provided port, on all network interfaces.
  */

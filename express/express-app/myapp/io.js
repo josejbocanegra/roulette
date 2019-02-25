@@ -2,15 +2,15 @@ var socket = require("socket.io");
 
 var messages = [{
   id: 1,
-  text: "Hola soy un mensaje",
-  author: "Carlos Azaustre"
+  text: "Welcome",
+  author: "Jose Bocanegra"
 }];
 
 function startConnection(server){
 	var io = socket(server); 
 
 	io.on('connection', function(socket) {
-  		console.log('Alguien se ha conectado con Sockets');
+  		console.log('New connection to socket');
   		socket.emit('messages', messages);
 
   		socket.on('new-message', function(data) {
@@ -20,3 +20,5 @@ function startConnection(server){
 	});
 }
 module.exports.startConnection = startConnection;
+
+
