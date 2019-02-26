@@ -18,6 +18,10 @@ export class Canvas extends Component {
 						
 						<div className="col-3">
 							Todo<br/><hr/>
+							<div className="border border-success">
+								<p className="font-weight-bold">Tarea No. 1</p>
+								<p>Comenzar la tercera entrega del proyecto</p>
+								</div>
 							<button>+</button>
 						</div>
 						
