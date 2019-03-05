@@ -7,8 +7,13 @@ var io = socket(server);
 var messages = [{
   id: 1,
   text: "Hello world",
-  author: "Jose Bocanegra"
+  author: "Jose Bocanegra",
+}, {
+  id: 2,
+  text: "Hola",
+  author: "Juan",
 }];
+
 
 app.use(express.static('public'));
 
@@ -18,7 +23,10 @@ app.get('/hello', function(req, res) {
 
 io.on('connection', function(socket) {
   console.log('Connection with web socket');
+  
   socket.emit('messages', messages);
+
+
 
   socket.on('new-message', function(data) {
     messages.push(data);

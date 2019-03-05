@@ -21,7 +21,7 @@ export class Canvas extends Component {
 							<div className="border border-success">
 								<p className="font-weight-bold">Tarea No. 1</p>
 								<p>Comenzar la tercera entrega del proyecto</p>
-								</div>
+							</div>
 							<button>+</button>
 						</div>
 						

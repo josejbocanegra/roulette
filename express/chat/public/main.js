@@ -17,10 +17,9 @@ function render (data) {
 }
 
  
-
 function addMessage(e) {
   var message = {
-    author: document.getElementById('username').value,
+    author: "Guest1",//document.getElementById('username').value,
     text: document.getElementById('texto').value
   };
 
