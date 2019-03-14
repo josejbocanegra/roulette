@@ -8,8 +8,6 @@ function connect(callback){
 		if(errClient!==null) 
 			console.log("Error while connecting to mongodb: ", errClient);	
 		
-		//console.log("Connected to mongodb");
-		
 		const db = client.db("dbEmploymentApp");
 
 		const collection = db.collection("joboffers");
@@ -35,8 +33,6 @@ function getJobOffers(callback){
 		collection.find({}).toArray(function(errDatabase, docs) {
 			if(errDatabase!==null)
 				console.log("Error while getting the collection", errDatabase);
-		
-			//console.log("Docs: ", docs);
 		
 			callback(docs);
 		

@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var conn = require ("../connection");
+var conn = require ("../lib/connection");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

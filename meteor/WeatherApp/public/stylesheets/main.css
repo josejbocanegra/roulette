@@ -1,0 +1,17 @@
+.textoDay{
+    position: relative;
+    top: -250px;
+    left: 0px;
+}
+
+.textoTempMax{
+    position: relative;
+    top: -200px;
+    left: 0px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
