@@ -6,16 +6,16 @@ app.get("/", (req,res)=>{
 });
 
 app.get("/estudiantes", (req,res)=>{
-	res.end("Estudiantes");
+	res.end("Ruta estudiantes ");
 });
 
 app.get("/aulas", (req,res)=>{
-	res.end("Aulas");
+	res.end("Ruta para Aulas");
 });
 
 app.get("*", (req,res)=>{
 	res.end("Not found");
-
+});
 
 app.listen(8000);
 
