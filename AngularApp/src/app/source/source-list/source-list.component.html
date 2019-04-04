@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let source of sources">
+          <tr>
+            <td>
+              <a routerLink="/source/{{source.id}}" >{{source.name}} </a> 
+            </td>
+            <td> {{source.description}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
