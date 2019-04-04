@@ -8,7 +8,8 @@ export default class Project extends React.Component {
 		description: "",
 		id: "",
 		totalTasks: "",
-		completedTasks: ""
+		completedTasks: "",
+		timeIsLogged: ""
 	}
 	
 	componentDidMount() {
@@ -17,10 +18,16 @@ export default class Project extends React.Component {
 				return e.completed === false;
 			});
 
+			let timeIsLogged = response.data["todo-items"].filter (e=>{
+				return e.timeIsLogged !== "0";
+			});
+
 			this.setState({
 		   		totalTasks : response.data["todo-items"].length,
-		   		completedTasks: completed.length
+		   		completedTasks: completed.length,
+		   		timeIsLogged: timeIsLogged.length
 		   	});
+
 		});
 	}
 
@@ -31,6 +38,7 @@ export default class Project extends React.Component {
 				<h3>{this.props.description}</h3>
 				<p>Total de tareas: {this.state.totalTasks} </p>
 				<p>Tareas completadas: {this.state.completedTasks} </p>
+				<p>Tareas con logs: {this.state.timeIsLogged} </p>
 			</div>
 		);
 	}
