@@ -33,5 +33,15 @@
       "maxAge" : "1h",
       "timeout": "5s"
     }
+  },
+  {
+    "name": "nasa",
+    "urls": ["https://earthengine.googleapis.com/api/*"],
+    "cacheConfig":  {
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge" : "1h",
+      "timeout": "5s"
+    }
   }]
 }
