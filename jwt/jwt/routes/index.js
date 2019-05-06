@@ -6,8 +6,6 @@ var middleware = require("../middleware.js");
 
 HandlerGenerator = new HandlerGenerator();
 
-console.log("login--->", HandlerGenerator);
-
 /* GET home page. */
 router.get('/', middleware.checkToken, HandlerGenerator.index);
 

@@ -13,7 +13,7 @@ class HandlerGenerator {
     let mockedUsername = 'admin';
     let mockedPassword = 'password';
 
-    // Si se especifico un usuario y contraseña, proceda con la validación
+    // Si se especificó un usuario y contraseña, proceda con la validación
     // de lo contrario, un mensaje de error es retornado
     if( username && password ) {
 
