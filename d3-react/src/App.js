@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as d3 from "d3";
-
+/*
 const data = [
 	{
 		"country": "Afghanistan",
@@ -39,7 +39,7 @@ const data = [
 		"purchasingpower": "34435.37"
 	}
 ];
-
+*/
 const x = d3.scaleLinear()
     .domain([0, 35000])
     .range([0, 800]);
@@ -50,7 +50,53 @@ const y = d3.scaleLinear()
 
 class App extends Component {
 
+    handleMouseOut(d, i) {
+        // Use D3 to select element, change color back to normal
+        d3.select(this)
+            .attr("fill", "#ffaaccaa");
+        // Select text by id and then remove
+        d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
+      }
+
+    handleMouseOver(d, i) {  // Add interactivity
+        // Use D3 to select element, change color and size
+        
+        let parent = d3.select(this.parentNode);
+
+        d3.select(this)
+            .attr("fill", "orange");
+        
+        parent.append("text")
+            .attr("id", "t" + d.x + "-" + d.y + "-" + i)
+            .attr("x", d => x(d.purchasingpower) - 10)
+            .attr("y", d => y(d.lifeexpectancy))
+            .text(d=>d.country);
+
+        // Specify where to put label of text
+        /*
+        let svg = d3.select("svg");
+        console.log(svg);
+        svg.append("text").attr({
+           
+            x: function() { return 100; },
+            y: function() { return 100; }
+        })
+        .text(function() {
+          return [d.x, d.y];  // Value of the text
+        });*/
+      }
+
     componentDidMount(){
+
+        fetch("https://gist.githubusercontent.com/josejbocanegra/000e838b77c6ec8e5d5792229c1cdbd0/raw/83cd9161e28e308ef8c5363e217bad2b6166f21a/countries.json")
+        .then(res => {
+            return res.json();
+        }).then(data => {
+            this.renderData(data);
+        });   
+    }
+
+    renderData(data){
 
         let svg = d3.select("svg");
 
@@ -66,32 +112,18 @@ class App extends Component {
             .attr("cx", d => x(d.purchasingpower))
             .attr("cy", d => y(d.lifeexpectancy))
             .attr("r", 25)
+            .on("mouseover", this.handleMouseOver)
+            .on("mouseout", this.handleMouseOut)
             .attr("fill", "#ffaaccaa");
-
-        elemEnter.append("text")
-            .attr("dx", d => x(d.purchasingpower))
-            .attr("dy", d => y(d.lifeexpectancy))
-            .text(d => d.country);
 
         main.append("g")
             .classed("x--axis", true)
             .call(d3.axisBottom(x))
             .attr("transform", "translate(0, 500)");
 
-            main.append("g")
-            .classed("y--axis", true)
-            .call(d3.axisLeft(y));
-
-        /*svg.append("circle")
-            .attr("cx", 100)
-            .attr("cy", 100)
-            .attr("r", 100)
-            .attr("fill", "#ffaaccaa");
-        svg.append("circle")
-            .attr("cx", 140)
-            .attr("cy", 100)
-            .attr("r", 100)
-            .attr("fill", "#ffaaccaa");*/
+        main.append("g")
+        .classed("y--axis", true)
+        .call(d3.axisLeft(y));
     }
     render() {
         return (
