@@ -1,0 +1,6 @@
+@media screen and (min-aspect-ratio: 4/3){
+    :root {
+        background: red;
+        --message: "hola mundo"
+    }
+}
