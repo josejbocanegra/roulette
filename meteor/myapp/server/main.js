@@ -1,5 +1,18 @@
 import { Meteor } from 'meteor/meteor';
+import Profiles from "../collections";
 
 Meteor.startup(() => {
-  // code to run on server at startup
-});
+  if (Profiles.find().count() === 0) {
+    console.log("There are no profiles");
+    let dummyPosts = [
+      { name: "Ana Toledo", age: 50 },
+      { name: "Maribel Gómez", age: 40 },
+      { name: "Carlos Torres", age: 60 },
+      { name: "Andrea Cadena", age: 65 },
+    ];
+
+    dummyPosts.forEach(e => {
+      Profiles.insert(e);
+    })
+  }
+}); 

@@ -1,0 +1,54 @@
+[
+{
+"name" : "The Lord of the Rings", 
+"isbn": "930330149-8", 
+"image": "https://images-na.ssl-images-amazon.com/images/I/516GyHY9p6L.jpg", 
+"description": "Supplement R Tympanic Membrane with Synth Sub, Via Opening", 
+"publishDate": "8/20/1996",
+"editorial_id": 100
+},
+
+{
+"name" : "Harry Potter and the Sorcerer Stone", 
+"isbn":"507119915-7",
+"image": "http://m.cdn.blog.hu/ko/kockagyar/image/harry_potter_poster/harry_potter_1.jpg", 
+"description": "Occlusion of Right Femoral Artery, Percutaneous Approach", 
+"publishDate": "2/19/2014",
+"editorial_id": 100
+},
+
+{
+"name" : "A Game of Thrones", 
+"isbn": "279453624-9", 
+"image": "https://cdn.waterstones.com/bookjackets/large/9780/0075/9780007548231.jpg", 
+"description": "Removal of Spacer from Tlum Jt, Perc Approach", 
+"publishDate": "4/7/1998",
+"editorial_id": 100
+},
+
+{
+"name" : "The Winds of Winter", 
+"isbn": "744706866-7",
+"image": "http://www.darkmediaonline.com/wp-content/uploads/2013/01/WindsofWinter.jpg", 
+"description": "Reposition Left Femoral Shaft, Perc Endo Approach", 
+"publishDate": "10/10/1998",
+"editorial_id": 200
+},
+
+{
+"name" : "The Slow Regard of Silent Things", 
+"isbn":"260760424-9", 
+"image": "http://www.patrickrothfuss.com/images/page/cover-slow-regard_277.jpg", 
+"description": "Supplement Lower Artery with Autol Sub, Perc Approach", 
+"publishDate": "5/9/2013",
+"editorial_id": 200
+},
+
+{
+"name" : "Harry Potter and the Philosopher´s Stone",
+"isbn":"260760424-9",
+"image": "https://katemacdonalddotnet.files.wordpress.com/2015/11/potter-1-4.jpg", 
+"description": "disse accumsan tortor quis turp Perc Approach", 
+"publishDate": "5/9/2013",
+"editorial_id": 202
+}]
