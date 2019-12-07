@@ -1,17 +1,17 @@
-module.exports = (sequelize, Sequelize) => {
+module.exports = (sequelize, type) => {
 
     return sequelize.define('review', {
         // attributes
         name: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
         description: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
         source: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         }
     });

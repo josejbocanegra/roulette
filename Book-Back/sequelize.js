@@ -5,7 +5,7 @@ const BookModel = require('./models/book')
 const EditorialModel = require('./models/editorial')
 const ReviewModel = require('./models/review')
 
-const sequelize = new Sequelize('bookstore', 'postgres', '', {
+const connection = new Sequelize('bookstore', 'postgres', 'ghothh12', {
     host: 'localhost',
     dialect: 'postgres',
     define: {
@@ -13,11 +13,11 @@ const sequelize = new Sequelize('bookstore', 'postgres', '', {
     }
 });
 
-const Author = AuthorModel(sequelize, Sequelize);
-const Book = BookModel(sequelize, Sequelize);
-const Editorial = EditorialModel(sequelize, Sequelize);
-const Review = ReviewModel(sequelize, Sequelize);
-const BookAuthor = sequelize.define('book_author', {})
+const Author = AuthorModel(connection, Sequelize);
+const Book = BookModel(connection, Sequelize);
+const Editorial = EditorialModel(connection, Sequelize);
+const Review = ReviewModel(connection, Sequelize);
+const BookAuthor = connection.define('book_author', {})
 
 Book.belongsTo(Editorial);
 Review.belongsTo(Book);
@@ -25,9 +25,8 @@ Review.belongsTo(Book);
 Book.belongsToMany(Author, { through: BookAuthor, unique: false });
 Author.belongsToMany(Book, { through: BookAuthor, unique: false });
 
-/*sequelize.sync({ force: true })
+/*connection.sync({ force: true })
     .then(() => {
         console.log(`Database & tables created!`)
-    })
-*/
+    })*/
 module.exports = { Author, Book, Editorial, Review, BookAuthor }

@@ -1,25 +1,25 @@
-module.exports = (sequelize, Sequelize) => {
+module.exports = (sequelize, type) => {
 
     return sequelize.define('book', {
         // attributes
         name: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
         isbn: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
         image: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
         description: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
-        publishdate: {
-            type: Sequelize.DATE,
+        publishDate: { 
+            type: type.DATE,
             allowNull: false
         }
     });

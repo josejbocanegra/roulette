@@ -1,9 +1,9 @@
-module.exports = (sequelize, Sequelize) => {
+module.exports = (sequelize, type) => {
 
     return sequelize.define('editorial', {
         // attributes
         name: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         }
     });

@@ -1,21 +1,21 @@
-module.exports = (sequelize, Sequelize) => {
+module.exports = (sequelize, type) => {
 
     return sequelize.define('author', {
         // attributes
         name: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
         image: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         },
-        birthdate: {
-            type: Sequelize.DATE,
+        birthDate: {
+            type: type.DATE,
             allowNull: false
         },
         description: {
-            type: Sequelize.STRING,
+            type: type.STRING,
             allowNull: false
         }
     });
