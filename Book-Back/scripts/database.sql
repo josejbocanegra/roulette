@@ -21,11 +21,11 @@ insert into books  values (500, 'The Slow Regard of Silent Things', '260760424-9
 insert into books values (600, 'Harry Potter and the Philosopher´s Stone', '260760424-9', 'https://katemacdonalddotnet.files.wordpress.com/2015/11/potter-1-4.jpg', 'disse accumsan tortor quis turp Perc Approach', '5/9/2013',200);
 
 
+insert into editorials (id, name) values (100,'Oveja Negra');
+insert into editorials (id, name) values (200,'Siruela');
+
+
 insert into reviews  values (100,' ', 'This isnot really like other books, even its imitators, though the best of them are similarly long, variable in pace and diverse in language and location. The early part of the story was meant to be a follow-up  ', ' ', 100);
 insert into reviews  values (200, ' ','The trilogy is worth reading once. For readers who like fast paced action , this is not a series I would recommend. It progresses quite slowly and the descriptions are lengthy - not really my type. But if you have the patience, the plot is worth it.', ' ', 100);
 insert into reviews  values (300,' ','This isnt really like other books, even its imitators, though the best of them are similarly long, variable in pace and diverse in language and location. The early part of the story was meant to be a follow-up to The Hobbit, u ',' ', 200);
 insert into reviews  values (400,' ', 'The trilogy is worth reading once. For readers who like fast paced action , this is not a series I would recommend. It progresses quite slowly and the descriptions are lengthy - not really my type. But if you have the patience, the plot is worth it.',' ', 300);
-
-
-insert into editorials (id, name) values (100,'Oveja Negra');
-insert into editorials (id, name) values (200,'Siruela');
