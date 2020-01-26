@@ -1,0 +1,59 @@
+/* Color Theme Swatches in Hex */
+body {
+    font-family: sans-serif;
+    background-color: #BFBFBF;;
+}
+
+h2 {
+    color: #593A1E;
+}
+img {
+    width: 240px;
+    height: 100px;
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+    filter: grayscale(1);
+    border-radius: 25px;
+}
+
+.header {
+    background-color: #593A1E;
+}
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 52em;
+}
+
+.site-title {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #F2F2F2;;
+}
+
+.card {
+    display: inline-block;
+    width: 15em;
+    background-color: #D9C8A9;
+    margin: 0px 10px;
+    border-radius: 25px;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 8px hsl(0, 0%, 100%);
+}
+
+.card-content{
+    padding: 1.4em;
+}
+
+/* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #A68B3C; }
+.Moda-2-hex { color: #BFA473; }
+.Moda-3-hex { color: #D9C8A9; }
+.Moda-4-hex { color: #735229; }
+.Moda-5-hex { color: #593A1E; }
