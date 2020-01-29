@@ -1,0 +1,33 @@
+.spaced {
+    margin: 50px;
+}
+
+.high-spaced {
+    margin: 100px;
+}
+
+.dark {
+    background-color: #59493B;
+    color: #F2F2F2;
+}
+
+.light {
+    background-color: #F29A2E;
+}
+
+.medium {
+    background-color: #BF9180;
+}
+
+.main-content{
+    background-color:#F2F2F2;
+}
+
+.right-border {
+    border-right: solid;
+    border-right-color: black;
+}
+
+.pink{
+    background-color: #BF6979;
+}
