@@ -23,12 +23,11 @@ function createArrayCorrelations(response) {
   let finalResponse = [];
   let arrayEvents = getEventsArray(response);
   arrayEvents.forEach(event => {
-    let correlation = phi(tableFor(event, response))
+    let correlation = phi(tableForEvent(event, response))
     let data = { "event": event, "correlation": correlation };
     finalResponse.push(data);
   });
   return finalResponse.sort((a, b) => parseFloat(b.correlation) - parseFloat(a.correlation));
-  //console.log(finalResponse.sort((a, b) => parseFloat(b.correlation) - parseFloat(a.correlation)));
 }
 
 function createTableEvents(response) {
@@ -45,7 +44,6 @@ function createTableEvents(response) {
 }
 
 function getEventsArray(response) {
-  let tp = 0, tn = 0, fp = 0, fn = 0;
   let eventsArray = [];
   response.forEach(e => {
     e.events.forEach(event => {
@@ -57,7 +55,7 @@ function getEventsArray(response) {
   return eventsArray;
 }
 
-function tableFor(event, response) {
+function tableForEvent(event, response) {
   let table = [0, 0, 0, 0];
   response.forEach(e => {
     let index = 0;
