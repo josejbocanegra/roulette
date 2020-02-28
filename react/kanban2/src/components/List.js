@@ -13,23 +13,18 @@ class List extends Component {
                 "content": "Hacer artículo"
             }
         ],
-        form: {
-
-        },
 
         newCard: ""
     }
 
     handleAdd = () => {
-        document.getElementById("newCardButton").hidden = true;
+        document.getElementById(`newCardButton${this.props.name}`).hidden = true;
 
-        let form = document.getElementById("form");
+        let form = document.getElementById(`form${this.props.name}`);
         if (form) {
             form.hidden = false;
-            document.getElementById("newCard").focus();
+            document.getElementById(`newCard${this.props.name}`).focus();
         }
-
-        this.setState({ form: { name: "dd" } });
     }
 
     renderCards() {
@@ -61,9 +56,9 @@ class List extends Component {
     }
 
     resetForms() {
-        document.getElementById("newCard").value = "";
-        document.getElementById("form").hidden = true;
-        document.getElementById("newCardButton").hidden = false;
+        document.getElementById(`newCard${this.props.name}`).value = "";
+        document.getElementById(`form${this.props.name}`).hidden = true;
+        document.getElementById(`newCardButton${this.props.name}`).hidden = false;
     }
 
     handleChange = (event) => {
@@ -80,16 +75,16 @@ class List extends Component {
     }
 
     renderForm() {
-        if (Object.keys(this.state.form).length !== 0) {
-            return (
-                <div id="form">
-                    <form onSubmit={this.handleSubmit}>
-                        <input type="text" id="newCard" name="newCard" onChange={this.handleChange} />
-                        <button type="button" onClick={this.handleClose}>X</button>
-                    </form>
-                </div>
-            );
-        }
+
+        return (
+            <div id={`form${this.props.name}`}>
+                <form onSubmit={this.handleSubmit}>
+                    <input type="text" id={`newCard${this.props.name}`} name="newCard" onChange={this.handleChange} />
+                    <button type="button" onClick={this.handleClose}>X</button>
+                </form>
+            </div>
+        );
+
     }
 
     render() {
@@ -98,7 +93,7 @@ class List extends Component {
                 <h1>{this.props.name}</h1>
                 {this.renderCards()}
                 {this.renderForm()}
-                <div id="newCardButton">
+                <div id={`newCardButton${this.props.name}`}>
                     <button onClick={this.handleAdd}>Añada otra tarjeta</button>
                 </div>
             </div>
