@@ -14,12 +14,13 @@ class List extends Component {
             }
         ],
 
-        newCard: ""
+        newCard: "",
+
+        form: false
     }
 
     handleAdd = () => {
         document.getElementById(`newCardButton${this.props.name}`).hidden = true;
-
         let form = document.getElementById(`form${this.props.name}`);
         if (form) {
             form.hidden = false;
@@ -85,6 +86,12 @@ class List extends Component {
             </div>
         );
 
+    }
+
+    componentDidMount() {
+        if (!this.state.form) {
+            document.getElementById(`form${this.props.name}`).hidden = true;
+        }
     }
 
     render() {
