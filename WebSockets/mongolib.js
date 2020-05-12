@@ -26,11 +26,14 @@ const findDocuments = function (db, callback) {
   });
 };
 
-const listeningForChanges = (db) => {
+const listeningForChanges = (db, notifyAll) => {
   console.log("In listening...");
   const cursor = db.collection("reactive").watch();
   cursor.on("change", (data) => {
-    console.log("Collection changing...");
+    findDocuments(db, (docs) => {
+      console.log("Collection changing...", docs);
+      notifyAll(docs);
+    });
   });
 };
 
