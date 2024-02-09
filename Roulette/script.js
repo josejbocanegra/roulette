@@ -1,9 +1,6 @@
-const ISIS2603 =
-  "https://gist.githubusercontent.com/josejbocanegra/eae3bddc60eaa89c980dcf4274218f61/raw/18fbede3fc064038bc539a7b1b03a757f18401fe/isis2603.json";
-const ISIS3710 =
-  "https://gist.githubusercontent.com/josejbocanegra/3e3bab1d86a727f5fd58410461e82889/raw/1a3f5007bd32ebe50233d202413a274c605faa26/isis3710.json";
+const course = "./students/isis2603.json";
 
-fetch(ISIS3710)
+fetch(course)
   .then((data) => data.json())
   .then((data) => {
     processInfo(data);
