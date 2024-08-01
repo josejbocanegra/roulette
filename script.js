@@ -1,4 +1,4 @@
-const course = "./students/isis3710.json";
+const course = "./students/isis2603.json";
 fetch(course)
   .then((data) => data.json())
   .then((data) => {
@@ -72,7 +72,7 @@ function processInfo(data) {
     })
     .attr("text-anchor", "end")
     .text(function (d, i) {
-      return data[i].label;
+      return data[i].name;
     });
   container.on("click", spin);
 
@@ -111,7 +111,7 @@ function processInfo(data) {
           "#111"
         );
         //populate question
-        d3.select("#question h1").text(data[picked].question);
+        d3.select("#question h1").text(data[picked].name);
         oldrotation = rotation;
 
         container.on("click", spin);
