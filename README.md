@@ -38,5 +38,3 @@ Coming soon
 ## License
 
 Released under the [MIT License](http://opensource.org/licenses/MIT)
-
-
