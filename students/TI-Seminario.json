@@ -1,18 +1,47 @@
-[{"name": "Velasco Rodriguez Carol Stefanya"},
-{"name": "Vargas Medina Andres Julian"},
-{"name": "Valiente Rivera Brayan Miguel"},
-{"name": "Romero Morales Juan David "},
-{"name": "Rincon Valencia Kevin David"},
-{"name": "Rincon Sanabria Paula Natalia"},
-{"name": "Rincon Rojas Juliana Camila"},
-{"name": "Prado Blanco Ivan Felipe"},
-{"name": "Murillo Guerrero Nicolas David"},
-{"name": "Mosquera Marin Juan Pablo"},
-{"name": "Molina Diaz Kaleth"},
-{"name": "Gonzalez Cardenas Juan Esteban"},
-{"name": "Gamez Camino Camilo Andres"},
-{"name": "Fonseca Lopez Omar Yesid"},
-{"name": "Celis Herrera Carlos Andres"},
-{"name": "Castro Rivera Nicolas"},
-{"name": "Alvarez Cristancho Juan Diego"},
-{"name": "Aljure Bernal Samuel"}]
+[
+    {
+        "name": "Velasco Rodriguez Carol Stefanya"
+    },
+    {
+        "name": "Vargas Medina Andres Julian"
+    },
+    {
+        "name": "Valiente Rivera Brayan Miguel"
+    },
+    {
+        "name": "Romero Morales Juan David "
+    },
+    {
+        "name": "Rincon Valencia Kevin David"
+    },
+    {
+        "name": "Rincon Sanabria Paula Natalia"
+    },
+    {
+        "name": "Rincon Rojas Juliana Camila"
+    },
+    {
+        "name": "Prado Blanco Ivan Felipe"
+    },
+    {
+        "name": "Murillo Guerrero Nicolas David"
+    },
+    {
+        "name": "Molina Diaz Kaleth"
+    },
+    {
+        "name": "Gonzalez Cardenas Juan Esteban"
+    },
+    {
+        "name": "Gamez Camino Camilo Andres"
+    },
+    {
+        "name": "Celis Herrera Carlos Andres"
+    },
+    {
+        "name": "Alvarez Cristancho Juan Diego"
+    },
+    {
+        "name": "Aljure Bernal Samuel"
+    }
+]
