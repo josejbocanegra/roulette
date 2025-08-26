@@ -1,4 +1,4 @@
-const course = "./students/TI-Seminario.json";
+const course = "./students/IS.json";
 fetch(course)
   .then((data) => data.json())
   .then((data) => {
@@ -123,10 +123,10 @@ function processInfo(data) {
     .attr(
       "transform",
       "translate(" +
-        (w + padding.left + padding.right) +
-        "," +
-        (h / 2 + padding.top) +
-        ")"
+      (w + padding.left + padding.right) +
+      "," +
+      (h / 2 + padding.top) +
+      ")"
     )
     .append("path")
     .attr("d", "M-" + r * 0.15 + ",0L0," + r * 0.05 + "L0,-" + r * 0.05 + "Z")
