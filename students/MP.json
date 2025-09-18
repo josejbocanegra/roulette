@@ -1,22 +1,74 @@
-[{"name": "Sánchez Casilima Brayan Steven"},
-{"name": "Lozano Duarte Kevin Estiven"},
-{"name": "Romero Morales Juan David"},
-{"name": "Aldana Gonzalez David Santiago"},
-{"name": "Mutis Poloche Esteban Smith"},
-{"name": "Sanchez Escobar Dilan Alejandro"},
-{"name": "Moreno Galeano Juan Camilo"},
-{"name": "Rincon Barragan Juan Felipe"},
-{"name": "Aguilar Jimenez Fabian Yesith"},
-{"name": "Lopez Bogota Juan Sebastian"},
-{"name": "Alvarez Rios David Santiago"},
-{"name": "Giraldo Bohorquez Juan Pablo"},
-{"name": "Ramirez Benalcazar Luis Mario"},
-{"name": "Rico Moreno David Ricardo"},
-{"name": "Martinez Quiñones Ladi Yolima"},
-{"name": "Riveros Guio Marlon Yecid"},
-{"name": "Salcedo Parra Natalia"},
-{"name": "Sanchez Acero David"},
-{"name": "Cardenas Cristancho Felipe"},
-{"name": "Castro Narvaez Brayan Felipe"},
-{"name": "Quintero Rubiano Juan Carlos"},
-{"name": "Garzon Gomez Pablo"}]
+[
+    {
+        "name": "Acevedo Baldovino Sebastian Ricardo"
+    },
+    {
+        "name": "Agudelo Sotelo Kevin Daniel"
+    },
+    {
+        "name": "Castro Quiroga Sara Sofia"
+    },
+    {
+        "name": "Correa Mendez Andres Felipe"
+    },
+    {
+        "name": "Cucanchon Ramirez Jose David"
+    },
+    {
+        "name": "Diaz Vergara Angel Andres"
+    },
+    {
+        "name": "Fernandez Rios Erik Joan"
+    },
+    {
+        "name": "Gomez Gutierrez Daniel Juan"
+    },
+    {
+        "name": "Guada Bohorquez Santiago Alejandro"
+    },
+    {
+        "name": "Guio Moreno Leonardo Alejandro"
+    },
+    {
+        "name": "Gutierrez Muñoz Tomas"
+    },
+    {
+        "name": "Hernandez Vega Nicolas"
+    },
+    {
+        "name": "Leonel Peña Andres"
+    },
+    {
+        "name": "Lopez Pardo Luis Fernando"
+    },
+    {
+        "name": "Morales Ujueta Alexander"
+    },
+    {
+        "name": "Ramirez Ortiz Jose Fernando"
+    },
+    {
+        "name": "Rojas Romero Carlos Julian"
+    },
+    {
+        "name": "Rondon Lara Andres Felipe"
+    },
+    {
+        "name": "Ruiz Wanumen Juan David"
+    },
+    {
+        "name": "Sánchez Casilima Brayan Steven"
+    },
+    {
+        "name": "Sandoval Martinez Ian Nicolas"
+    },
+    {
+        "name": "Torres Gil Didier Steveen"
+    },
+    {
+        "name": "Vargas Mayorga Santiago"
+    },
+    {
+        "name": "Villalobos Rodríguez Dennis Camilo"
+    }
+]
