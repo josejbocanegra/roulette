@@ -1,4 +1,4 @@
-const course = "./students/MP.json";
+const course = "./students/TI.json";
 fetch(course)
   .then((data) => data.json())
   .then((data) => {
